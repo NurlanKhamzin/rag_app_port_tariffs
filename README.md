@@ -92,6 +92,9 @@ Make sure you have the following installed:
     ```python
     query = "What are the tariffs for port services?"
     ```
+**Important Note:**
+
+The files `embeddings.py` and `rag_query.py` require you to provide your OpenAI API key for the embedding generation and query answering functionalities to work correctly. Ensure you have set up your OpenAI API key within these files according to the OpenAI documentation. **Failure to provide the API key will result in errors.**
 
 ## Detailed Steps for Integration
 
