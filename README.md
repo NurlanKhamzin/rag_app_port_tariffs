@@ -6,7 +6,7 @@ This README file provides a step-by-step guide to set up, install dependencies, 
 ## Project Structure
 
 The application consists of several modular components:
-
+```
 rag_app/
 ├── pdf_utils.py          # PDF extraction functions
 ├── token_utils.py        # Functions for text chunking
@@ -16,7 +16,7 @@ rag_app/
 ├── main.py               # Entry point for the pipeline
 ├── pdfs/                 # Folder for storing PDF files
 ├── requirements.txt      # Project dependencies
-
+```
 
 ## Prerequisites
 
@@ -117,7 +117,7 @@ You can modify individual components to adapt the workflow. For example:
 ## Example Output
 
 When you run the application, you’ll see logs for each step, e.g.:
-
+```python
 Step 1: Extracting text from PDF...
 Extracted Text (First 500 characters): ...
 
@@ -133,7 +133,7 @@ FAISS index created successfully.
 Step 5: Performing RAG query...
 RAG Response:
 "The port tariffs include charges for light dues, port dues, towage dues, etc."
-
+```
 
 ## Troubleshooting
 
