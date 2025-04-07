@@ -13,3 +13,6 @@ numpy==1.24.3
 
 # Access Environment Varaibles
 python-dotenv==1.1.0
+
+# CSV Processing
+pandas==2.2.3
