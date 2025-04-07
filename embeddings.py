@@ -1,7 +1,11 @@
 import openai
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Initialize OpenAI client
-client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
+openai_api_key = os.environ.get("OPENAI_API_KEY")
+client = openai.OpenAI(api_key=openai_api_key)
 
 def get_embeddings(text, api_key):
     """Generate a single embedding for the given input text."""

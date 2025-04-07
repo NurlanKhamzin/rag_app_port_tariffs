@@ -10,3 +10,6 @@ faiss-cpu==1.7.3
 
 # Array and Numerical Operations
 numpy==1.24.3
+
+# Access Environment Varaibles
+python-dotenv==1.1.0

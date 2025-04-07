@@ -1,8 +1,14 @@
 import openai
 from embeddings import get_embeddings
 from vector_store import query_faiss_index
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
+
+# Initialize OpenAI client
+openai_api_key = os.environ.get("OPENAI_API_KEY")
+client = openai.OpenAI(api_key=openai_api_key)
 
 def rag_query(query, faiss_index, text_chunks, api_key, top_k=3, model="gpt-4"):
     """
