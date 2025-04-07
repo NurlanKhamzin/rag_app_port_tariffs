@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8000/rag-query
+Content-Type: application/json
+
+{
+    "query": "What is the main topic of this document?",
+    "api_key": "YOUR_OPENAI_API_KEY"
+}
