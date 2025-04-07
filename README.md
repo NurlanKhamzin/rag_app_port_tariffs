@@ -137,6 +137,17 @@ Step 5: Performing RAG query...
 RAG Response:
 "The port tariffs include charges for light dues, port dues, towage dues, etc."
 ```
+`csv_utils.py`: CSV Processing Module
+
+This module provides utility functions for reading and processing CSV files.
+The CSV file is intended to serve as an intermediate format, potentially
+generated from JSON files processed by Azure Document Intelligence's
+General Documents model. Utilizing CSV in this way can enhance
+performance and accuracy during the embedding creation process by
+providing a refined and organized input structure.
+
+### Note:
+To run this scenario, ensure the appropriate lines for processing the CSV content are uncommented in main.py. Specifically, the lines calling read_csv_content and handling the extracted text should be uncommented for the pipeline to execute successfully.
 
 ## Troubleshooting
 

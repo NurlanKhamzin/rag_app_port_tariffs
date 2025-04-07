@@ -1,0 +1,22 @@
+{
+  "detail": [
+    {
+      "type": "missing",
+      "loc": [
+        "query",
+        "query"
+      ],
+      "msg": "Field required",
+      "input": null
+    },
+    {
+      "type": "missing",
+      "loc": [
+        "query",
+        "api_key"
+      ],
+      "msg": "Field required",
+      "input": null
+    }
+  ]
+}

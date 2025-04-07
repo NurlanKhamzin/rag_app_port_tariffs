@@ -3,19 +3,27 @@ from token_utils import split_text_into_chunks
 from embeddings import get_embeddings
 from vector_store import create_faiss_index
 from rag import rag_query
+import pandas as pd
+#from csv_utils import read_csv_content
 
 def main():
     # Define your OpenAI API key
     api_key = "YOUR_OPENAI_API_KEY"  # Replace with your actual API key
 
     # Path to your PDF file
-    pdf_path = "pdfs/port_tariff.pdf"  # Replace with your actual file path
+    #pdf_path = "pdfs/port_tariff.pdf"  # Replace with your actual file path
 
-    # Step 1: Extract text from the PDF
+    Step 1: Extract text from the PDF
     print("Step 1: Extracting text from PDF...")
     extracted_text = extract_text_from_pdf(pdf_path)
-    print("Extracted Text (First 500 characters):")
-    print(extracted_text[:500])  # Preview the first 500 characters
+    # Path to your CSV file
+    #csv_path = './pdfs/port_tariff_content.csv'
+
+    # Step 1: Extract text from the CSV
+    #print("Step 1: Extracting text from CSV...")
+    #extracted_text = read_csv_content(csv_path, content_column='content')
+    #print("Extracted Text (First 500 characters):")
+    print(extracted_text[:500])  # Preview first 500 characters
 
     # Step 2: Chunk the extracted text
     print("\nStep 2: Chunking the extracted text...")
