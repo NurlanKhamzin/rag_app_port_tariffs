@@ -11,9 +11,9 @@ def main():
     api_key = "YOUR_OPENAI_API_KEY"  # Replace with your actual API key
 
     # Path to your PDF file
-    #pdf_path = "pdfs/port_tariff.pdf"  # Replace with your actual file path
+    pdf_path = "pdfs/port_tariff.pdf"  # Replace with your actual file path
 
-    Step 1: Extract text from the PDF
+    #Step 1: Extract text from the PDF
     print("Step 1: Extracting text from PDF...")
     extracted_text = extract_text_from_pdf(pdf_path)
     # Path to your CSV file
