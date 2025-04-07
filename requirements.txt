@@ -2,19 +2,11 @@
 # PDF Processing
 PyMuPDF==1.22.3
 
-# Vector Database: Milvus or Qdrant (choose one based on your preference)
-#pymilvus==2.2.2
-#qdrant-client==1.2.0
-
 # OpenAI API for embeddings and response generation
-openai==0.27.6
+openai==1.70.0
 
-# Vector processing and similarity search (optional, if FAISS is used)
+# Vector processing and similarity search
 faiss-cpu==1.7.3
-
-# API Framework
-fastapi==0.95.1
-uvicorn==0.22.0
 
 # Array and Numerical Operations
 numpy==1.24.3
