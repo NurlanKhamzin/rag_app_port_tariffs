@@ -35,7 +35,7 @@ def main():
     # Step 5: Handle RAG query
     print("\nStep 6: Performing RAG query...")
     query = "What are the tariffs for port services?"
-    response = rag_query(query, faiss_index, text_chunks, api_key, top_k=1, model="gpt-4")
+    response = rag_query(query, faiss_index, text_chunks, api_key, top_k=1, model="gpt-4o")
     print("\nRAG Response:")
     print(response)
 

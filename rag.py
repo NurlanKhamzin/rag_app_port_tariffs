@@ -10,7 +10,7 @@ load_dotenv()
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 client = openai.OpenAI(api_key=openai_api_key)
 
-def rag_query(query, faiss_index, text_chunks, api_key, top_k=3, model="gpt-4"):
+def rag_query(query, faiss_index, text_chunks, api_key, top_k=3, model="gpt-4o"):
     """
     Perform a Retrieval-Augmented Generation (RAG) query.
 
@@ -88,8 +88,8 @@ def rag_query(query, faiss_index, text_chunks, api_key, top_k=3, model="gpt-4"):
                     {"role": "system", "content": "You are a helpful assistant that helps to calculate port tariffs for South African Ports."},
                     {"role": "user",
                     "content": f"Use the following context to answer the question:\n\n{context}\n\nQuestion: {query}"},
-                    #{"role": "user",
-                    #"content": ""}
+                    {"role": "user",
+                    "content": f"You can use the following hints in your calculations - {light_dues}, {pilot_dues}, {towage_dues}"}
     ]
                                               )
     return response.choices[0].message.content.strip()
